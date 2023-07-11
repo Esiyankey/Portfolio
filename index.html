@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>my portfolio website</title>
   </head>
   <body>
@@ -51,23 +57,79 @@
       </div>
     </div>
     <div class="sliding-images">
-        <div class="back-icon">
-            <i class="fa-sharp fa-solid fa-chevron-left"></i>
+      <div class="image-slider">
+        <img src="girl-image.jpg" class="imageslides" alt="" />
+        <img src="backImage.jpg" class="imageslides" alt="" />
+        <img src="ben-images.jpg" class="imageslides" alt="" />
+      </div>
+      <div class="back-icon icons" id="back-icon">
+        <i class="fa-sharp fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="next-icon icons" id="next-icon ">
+        <i class="fa-sharp fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+
+    <div class="courses">
+      <div class="courses-cardContainer">
+        <div class="courses-card card1">
+          <div class="text">
+            <h4>
+              <span>Web Technologies</span><br />
+              Web technologies encompass a range of tools and standards used in
+              website and web application development
+            </h4>
+          </div>
         </div>
-        <div class="image-slider">
-            <div class="sliding-image">
-                <img src="backImage.jpg" class="sliderImage" alt="sliding image here">
-            </div>
-            <!-- <div class="sliding-image">
-                <img src="" alt="sliding image here">
-            </div>
-            <div class="sliding-image">
-                <img src="" alt="sliding image here">
-            </div> -->
+        <div class="courses-card card2">
+          <div class="text">
+            <h4>
+              <span>C++</span><br />
+              C++ is a powerful and versatile programming language widely used
+              for system programming, game development, and high-performance
+              applications
+            </h4>
+          </div>
         </div>
-        <div class="next-icon">
-            <i class="fa-sharp fa-solid fa-chevron-right"></i>
+        <div class="courses-card card3">
+          <div class="text">
+            <h4>
+              <span>Electronics</span><br />
+
+              Electronics is a field of study that deals with the design of
+              devices that use the flow of electrons to control electrical
+              signals.
+            </h4>
+          </div>
         </div>
+        <div class="courses-card card4">
+          <div class="text data">
+            <h4>
+              <span>Database </span><br />
+              Databases are essential components in modern software development,
+              providing efficient storage for managing vast amounts of data.
+            </h4>
+          </div>
+        </div>
+        <div class="courses-card card5">
+          <div class="text">
+            <h4>
+              <span>Web Technologies</span><br />
+              Web technologies encompass a range of tools and standards used in
+              website and web application development
+            </h4>
+          </div>
+        </div>
+        <div class="courses-card card6">
+          <div class="text">
+            <h4>
+              <span>Web Technologies</span><br />
+              Web technologies encompass a range of tools and standards used in
+              website and web application development
+            </h4>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="index.js"></script>

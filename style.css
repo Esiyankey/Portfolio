@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba(230, 225, 225, 0.267);
 }
 .intro-div {
   background-image: url(nana-adwoa.jpg);
@@ -23,7 +24,12 @@ body {
 .navbar {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   z-index: 10;
+  position: fixed;
+  width: 100%;
+  overflow-x: hidden;
+  top: 0;
 }
 
 .image {
@@ -99,10 +105,10 @@ span {
     height:40rem ;
     padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
-    background-color: #e6e6fa86;
+    /* background-color: rgba(167, 164, 164, 0.445); */
 }
 .back-icon,.next-icon{
     height: 3rem;
@@ -114,20 +120,186 @@ span {
     font-size: 1.3rem;
     background-color: #ffffff;
 }
-.sliding-image{
-    margin-top: 5rem;
-    height: 37rem;
-    width: 60rem;
+.back-icon{
+    position: absolute;
+    bottom: 20rem;
+    left: 17%;
 }
-.sliderImage{
-    width: 100%;
+.next-icon{
+    position: absolute;
+    bottom: 20rem;
+    left: 80%;
+}
+
+
+.image-slider{
+    display: flex;
+    margin-top: 2rem;
+    height: 28rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 40rem;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.imageslides{
     height: 100%;
+    width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
 }
-.image-slider{
-    display: flex;
-    overflow: hidden;
+.courses{
+  margin: auto;
+  background-image: url(backImage.jpg);
+  /* background-color: rgba(230, 227, 227, 0.603); */
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.courses-cardContainer{
+
+  max-width:60rem;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+.courses-card{
+    width: 15rem;
+    height: 18rem;
+    border-radius: 0.6rem;
+    background-color: white;
+    box-shadow: rgba(199, 197, 197, 0.062) 0px 2px 8px 0px;
+    transition: transform 0.1s ease-in-out;
+    position: relative;
+}
+.courses-card:hover{
+  transform: scale(1.02);
+  .text{
+    visibility: visible;
+  }
+}
+.card1{
+  background-image: url(courseContent/1_OaRU6kTgtm_shISCLb0fkQ.jpeg);
+}
+.card2{
+  background-image: url(courseContent/C-language.jpg);
+}
+.card3{
+  background-image: url(courseContent/course_1925_image.png);
+}
+
+.card4{
+  background-image: url(courseContent/database-management.png);
+}
+.card5{
+  background-image: url(courseContent/Types-of-computer-Hardware.jpg);
+}
+.card6{
+  background-image: url(courseContent/C-language.jpg);
+}
+.card1,.card2,.card3,.card4,.card5,.card6{
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.text{
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg,rgba(15, 15, 15, 0.158),black) ;
+  visibility: hidden;
+  border-radius: 0.6rem;
+  transition: 0.1s ease;
+}
+.text h4{
+  position: absolute;
+  bottom: 0;
+  color: white;
+  padding-left: 0.4rem;
+  font-size: 0.9rem;
+  transition: 0.1s ease;
+}
+
+/* about page */
+.about-navbar{
+  /* background-color: rgba(133, 130, 130, 0.137); */
+  height: 70px;
+  background-image: url(girl-image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-text{
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+.about-division{
+  max-width: 80rem;
+  margin: auto;
+  gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 15rem;
+  margin-bottom:3rem ;
+}
+.about-images{
+  border-radius: 0.2rem;
+  object-fit: cover;
+  width: 25rem;
+  height: 15rem;
+}
+.about-info{
+  width: 40rem;
+}
+
+
+@media screen  and ( max-width:640px){
+  body{
+    overflow-x: hidden;
+  }
+  .intro-div{
+   overflow-x:hidden ;
+
+  }
+  .links-ul{
+    visibility: hidden;
+
+  }
+  
+  .overlay{
+    margin-left:1rem ;
+    margin-top:4rem ;
+    
+    
+  }
+  .overlay-excerpt{
+   justify-content: start;
+   align-items: flex-start;
+  }
+  .overlay-excerpt h4{
+    padding-right: 1rem;
+    text-align: center;
+    overflow-wrap: break-word;
+  }
+  
+  .icons{
+    display: none;
+  }
+  .courses-cardContainer{
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+
