@@ -1,3 +1,6 @@
+
+
+document.addEventListener('DOMContentLoaded', function() {
 const links = document.querySelectorAll('#links-ul a');
 
 
@@ -14,4 +17,4 @@ links.forEach(link => {
 function navigateToPage(href) {
   window.location.href = href;
 }
-
+});

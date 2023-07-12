@@ -1,25 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: rgba(230, 225, 225, 0.267);
+  background-color: white;
 }
 .intro-div {
-  background-image: url(nana-adwoa.jpg);
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgb(58, 57, 57);
-  height: 45rem;
-  background-position: center;
   z-index: 1;
-  backdrop-filter: blur(8px);
-}
-.Elvis {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background-color: rgba(102, 102, 102, 0.603);
-  z-index: 1;
+  border-bottom: 1px solid rgba(219, 219, 219, 0.589);
 }
 .navbar {
   display: flex;
@@ -29,13 +15,12 @@ body {
   position: fixed;
   width: 100%;
   overflow-x: hidden;
+  background-color: #fff;
   top: 0;
+  border-bottom: 2px solid rgba(219, 219, 219, 0.589);
 }
-
 .image {
-  border-radius: 50%;
   width: 7rem;
-  color: white;
 }
 .links-ul {
   display: flex;
@@ -44,35 +29,36 @@ body {
   gap: 1rem;
 }
 .links-ul li a {
-  padding: 0.3rem;
+  padding: 0.1rem;
   text-decoration: none;
-  color: white;
+  color: #4d4b4d;
 }
 .overlay {
-  margin-left: 18rem;
+  max-width: 63rem;
+  margin: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
-  margin-top: 9rem;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
   z-index: 10;
-  color: rgb(253, 251, 251);
+}
+.active {
+  border-radius: 0.3px;
+  color: #2e202c;
+  border-bottom: 2.4px solid #e6e6fa;
 }
 span {
   font-size: 2rem;
 }
 .personal-image {
-  width: 12rem;
-  height: 12rem;
+  width: 22rem;
+  height: 22rem;
   border-radius: 50%;
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   border: 3px solid white;
-}
-.active {
-  border-radius: 0.3px;
-  border-bottom: 2.4px solid #e6e6fa;
 }
 .overlay-excerpt {
   font-size: 1rem;
@@ -82,18 +68,20 @@ span {
 }
 .overlay-excerpt h4 {
   margin-bottom: 3rem;
+  color: #2e202c;
 }
 .name h2 {
   margin: 0;
   font-size: 5rem;
   font-weight: 200;
+  color: #18202c;
 }
 .overlay-btn {
   padding: 0.9rem 1.8rem;
   background: none;
-  color: white;
+  color: w#2e202c;
   border-radius: 30px;
-  border: 2px solid #e6e6fa;
+  border: 2px solid #2e202c;
   outline: none;
   font-size: 1rem;
   transition: 0.4s ease;
@@ -101,147 +89,135 @@ span {
 .overlay-btn:hover {
   background-color: rgb(94, 93, 93);
 }
-.sliding-images{
-    height:40rem ;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    /* background-color: rgba(167, 164, 164, 0.445); */
-}
-.back-icon,.next-icon{
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.3rem;
-    background-color: #ffffff;
-}
-.back-icon{
-    position: absolute;
-    bottom: 20rem;
-    left: 17%;
-}
-.next-icon{
-    position: absolute;
-    bottom: 20rem;
-    left: 80%;
-}
-
-
-.image-slider{
-    display: flex;
-    margin-top: 2rem;
-    height: 28rem;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 40rem;
-    overflow: hidden;
-    border-radius: 3px;
-}
-.imageslides{
-    height: 100%;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-}
-.courses{
-  margin: auto;
-  background-image: url(backImage.jpg);
-  /* background-color: rgba(230, 227, 227, 0.603); */
+.sliding-images {
+  height: 30rem;
+  padding: 2rem;
+  max-width: 100%;
+  display: flex;
+  /* background-image: url(unsplash3.jpg);
+  background-position: center;
   object-fit: cover;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
+  border-bottom: 2px solid rgba(219, 219, 219, 0.589);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+}
+.image-slider {
   display: flex;
+  height: 28rem;
+  width: 90rem;
+  justify-content: center;
+  gap: 1.5rem;
+  overflow: hidden;
+  border-radius: 3px;
+}
+.imageslides {
+  height: 100%;
+  width: 22rem;
+  border-radius: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+}
+.back-icon,
+.next-icon {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+}
+.back-icon {
+  position: absolute;
+  bottom: 16rem;
+  left: 17%;
+}
+.next-icon {
+  position: absolute;
+  bottom: 16rem;
+  left: 80%;
+}
+
+.courses {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* border-bottom: 1px solid gray; */
+  padding-bottom: 3rem;
 }
-.courses-cardContainer{
-
-  max-width:60rem;
-    margin-top: 4rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
+.courses-cardContainer {
+  max-width: 60rem;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
-.courses-card{
-    width: 15rem;
-    height: 18rem;
-    border-radius: 0.6rem;
-    background-color: white;
-    box-shadow: rgba(199, 197, 197, 0.062) 0px 2px 8px 0px;
-    transition: transform 0.1s ease-in-out;
-    position: relative;
+.courses-card {
+  width: 25rem;
+  height: 20rem;
+  border-radius: 0.6rem;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: transform 0.1s ease-in-out;
+  position: relative;
 }
-.courses-card:hover{
+.courses-card:hover {
   transform: scale(1.02);
-  .text{
-    visibility: visible;
-  }
 }
-.card1{
-  background-image: url(courseContent/1_OaRU6kTgtm_shISCLb0fkQ.jpeg);
+.card-images {
+  border-radius: 10px 10px 0 0;
+  height: 13rem;
+  width: 100%;
 }
-.card2{
-  background-image: url(courseContent/C-language.jpg);
-}
-.card3{
-  background-image: url(courseContent/course_1925_image.png);
+.text {
+  padding-left: 0.3rem;
+  padding-bottom: 0.4rem;
 }
 
-.card4{
-  background-image: url(courseContent/database-management.png);
-}
-.card5{
-  background-image: url(courseContent/Types-of-computer-Hardware.jpg);
-}
-.card6{
-  background-image: url(courseContent/C-language.jpg);
-}
-.card1,.card2,.card3,.card4,.card5,.card6{
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
   background-position: center;
   object-fit: cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.text{
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(180deg,rgba(15, 15, 15, 0.158),black) ;
-  visibility: hidden;
-  border-radius: 0.6rem;
-  transition: 0.1s ease;
-}
-.text h4{
-  position: absolute;
-  bottom: 0;
-  color: white;
-  padding-left: 0.4rem;
+.text h4 {
+  color: black;
   font-size: 0.9rem;
-  transition: 0.1s ease;
 }
 
 /* about page */
-.about-navbar{
-  /* background-color: rgba(133, 130, 130, 0.137); */
+.about-navbar {
+  background-color: #fff;
   height: 70px;
-  background-image: url(girl-image.jpg);
+  /* background-image: url(girl-image.jpg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-y: hidden;
 }
-.about-text{
+.about-text {
   font-size: 2rem;
   text-align: center;
   margin-top: 5rem;
 }
-.about-division{
+.about-division {
   max-width: 80rem;
   margin: auto;
   gap: 2rem;
@@ -250,56 +226,91 @@ span {
   align-items: center;
   width: 100%;
   height: 15rem;
-  margin-bottom:3rem ;
+  margin-bottom: 3rem;
 }
-.about-images{
+.about-images {
   border-radius: 0.2rem;
   object-fit: cover;
   width: 25rem;
   height: 15rem;
 }
-.about-info{
+.about-info {
   width: 40rem;
 }
+.calender {
+  padding-bottom: 2rem;
+  max-width: 80rem;
+  margin: auto;
+}
+.calender-marquee {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.calender-event {
+  width: 20rem;
+  height: 10rem;
+  border-radius: 3px;
+  padding: 0.6rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.icon-calender {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.calender-icon {
+  font-size: 1.5rem;
+}
+.footer{
+  background-color: rgb(3, 3, 44);
+  position: relative;
+  bottom: 0;
+  height: 10rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.socialmedia-links{
+display: flex;
+gap: 3rem;
+font-size: 1.5rem;
 
-
-@media screen  and ( max-width:640px){
-  body{
+}
+@media screen and (max-width: 640px) {
+  body {
     overflow-x: hidden;
   }
-  .intro-div{
-   overflow-x:hidden ;
-
+  .intro-div {
+    overflow-x: hidden;
   }
-  .links-ul{
+  .links-ul {
     visibility: hidden;
+  }
 
+  .overlay {
+    margin-left: 1rem;
+    margin-top: 4rem;
   }
-  
-  .overlay{
-    margin-left:1rem ;
-    margin-top:4rem ;
-    
-    
+  .overlay-excerpt {
+    justify-content: start;
+    align-items: flex-start;
   }
-  .overlay-excerpt{
-   justify-content: start;
-   align-items: flex-start;
-  }
-  .overlay-excerpt h4{
+  .overlay-excerpt h4 {
     padding-right: 1rem;
     text-align: center;
     overflow-wrap: break-word;
   }
-  
-  .icons{
+
+  .icons {
     display: none;
   }
-  .courses-cardContainer{
+  .courses-cardContainer {
     display: flex;
     flex-direction: column;
-    
   }
 }
-
-
