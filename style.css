@@ -4,9 +4,15 @@ body {
   background-color: white;
   /* font-family: 'Poppins', sans-serif; */
 }
+
 .intro-div {
   z-index: 1;
   border-bottom: 1px solid rgba(219, 219, 219, 0.589);
+}
+.fabars {
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
 }
 .navbar {
   display: flex;
@@ -19,6 +25,33 @@ body {
   background-color: #fff;
   top: 0;
   border-bottom: 2px solid rgba(219, 219, 219, 0.589);
+}
+.show-links {
+  width: 100%;
+  height: 17rem;
+  background-color: white;
+  z-index: 20;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: absolute;
+  top: 72px;
+  right: 0;
+  display: none;
+}
+
+.drop-down {
+  display: flex;
+  flex-direction: column;
+}
+.drop-down a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  padding: 0.8rem 0.5rem;
+  border-bottom: 2px solid rgba(219, 219, 219, 0.589);
+
+}
+.drop-down a:hover{
+  background-color: rgb(192, 190, 190);
 }
 .image {
   width: 4rem;
@@ -112,7 +145,6 @@ span {
   animation: 20s slider infinite;
 } */
 
-
 /* .imageslides {
   height: 100%;
   width: 100%;
@@ -141,24 +173,23 @@ span {
   left: 75%;
 } */
 
-.sliding-images{
+.sliding-images {
   overflow: hidden;
   height: 35rem;
-  width: 60rem;
+  width: 40rem;
   margin-top: 4rem;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 6rem;
-  
 }
-.sliding-images .image-slider{
-  position:relative;
+.sliding-images .image-slider {
+  position: relative;
   width: 500%;
   margin: 0;
   left: 0;
   animation: 20s slider infinite;
 }
-.sliding-images .image-slider .imageslides{
+.sliding-images .image-slider .imageslides {
   width: 20%;
   float: left;
   object-fit: cover;
@@ -166,42 +197,32 @@ span {
   background-size: cover;
 }
 
-
-@keyframes slider{
-  0%{
+@keyframes slider {
+  0% {
     left: 0;
   }
-  20%{
+  20% {
     left: 0;
-
   }
-  25%{
+  25% {
     left: -100%;
   }
-  45%{
-    left:-100% ;
+  45% {
+    left: -100%;
   }
-  50%{
+  50% {
     left: -200%;
   }
-  70%{
+  70% {
     left: -200%;
   }
-  75%{
+  75% {
     left: -300%;
   }
-  95%{
+  95% {
     left: -300%;
   }
 }
-
-
-
-
-
-
-
-
 
 .courses {
   margin: auto;
@@ -432,7 +453,7 @@ input:focus {
   flex-direction: column;
   align-items: center;
 }
-.referees{
+.referees {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,8 +471,18 @@ input:focus {
   .intro-div {
     overflow-x: hidden;
   }
+  .navbar {
+    justify-content: space-between;
+  }
   .links-ul {
-    visibility: hidden;
+    display: none;
+  }
+  .image {
+    margin-left: 1rem;
+  }
+  .fabars {
+    display: flex;
+    margin-right: 1rem;
   }
 
   .overlay {
@@ -462,10 +493,11 @@ input:focus {
     justify-content: start;
     align-items: flex-start;
   }
+  .name h2 {
+    font-size: 3.2rem;
+  }
   .overlay-excerpt h4 {
-    padding-right: 1rem;
-    text-align: center;
-    overflow-wrap: break-word;
+    width: 20rem;
   }
 
   .icons {
@@ -474,5 +506,17 @@ input:focus {
   .courses-cardContainer {
     display: flex;
     flex-direction: column;
+  }
+  .courses-card {
+    width: 20rem;
+    height: 22rem;
+  }
+  .calender h1 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .show {
+    display: block;
   }
 }
