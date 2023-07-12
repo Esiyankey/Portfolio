@@ -80,14 +80,13 @@ span {
 .overlay-btn {
   padding: 0.9rem 1.8rem;
   background: none;
-  color:#2e202c;
+  color: #2e202c;
   border-radius: 30px;
   border: 2px solid #2e202c;
   outline: none;
   font-size: 1.1rem;
   text-decoration: none;
   transition: 0.4s ease;
-  
 }
 .overlay-btn:hover {
   background-color: rgba(233, 230, 230, 0.658);
@@ -172,12 +171,12 @@ span {
   height: 20rem;
   border-radius: 0.6rem;
   background-color: whitesmoke;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  transition: transform 0.1s ease-in-out;
+  /* transition: transform 0.1s ease-in-out; */
   position: relative;
 }
 .courses-card:hover {
-  transform: scale(1.02);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* transform: scale(1.02); */
 }
 .card-images {
   border-radius: 10px 10px 0 0;
@@ -310,9 +309,10 @@ input:focus {
 .message {
   padding: 3rem 1rem;
 }
-.submit-button,.reset-button {
+.submit-button,
+.reset-button {
   padding: 0.9rem;
-  width:15rem;
+  width: 15rem;
   border-radius: 3px;
   background-color: green;
   font-size: 1.2rem;
@@ -320,7 +320,7 @@ input:focus {
   border: none;
   margin-bottom: 1rem;
 }
-.reset-button{
+.reset-button {
   background-color: red;
 }
 .gallery-img {
@@ -353,16 +353,40 @@ input:focus {
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
 }
-.display-grid:nth-child(3){
-grid-column: span 2;
+.display-grid:nth-child(3) {
+  grid-column: span 2;
 }
-.display-grid:nth-child(5){
+.display-grid:nth-child(5) {
   grid-row: span 2;
-  }
-  .display-grid:nth-child(9){
-    grid-column: span 2;
-    grid-row: span 2;
-    }
+}
+.display-grid:nth-child(9) {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.reference-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 3rem;
+}
+.reference-section {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.referees{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.reference-img img {
+  height: 30rem;
+  border-radius: 0.2rem;
+  width: 25rem;
+}
 @media screen and (max-width: 640px) {
   body {
     overflow-x: hidden;
