@@ -3,60 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Lexend:wght@100;200;300;400;500;600&family=Orbitron&family=PT+Serif:ital@1&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <title>Gallery</title>
   </head>
   <body>
-    <div class="navbar">
+    <div class="gallery">
+      <div class="navbar">
         <div class="logo-image">
-          <img src="imageLogo.png" class="image" alt="logo image here" />
+          <img src="images2.png" class="image" alt="logo image here" />
         </div>
         <div class="links">
           <ul class="links-ul" id="links-ul">
             <li>
-              <a href="#"  data-href="index.html">Home</a>
+              <a href="index.html" class="links"  >Home</a>
             </li>
-            <li><a href="#about.html" data-href="about.html">About</a></li>
-            <li><a href="#gallery.html" data-href="gallery.html">Gallery</a></li>
-            <li><a href="#reference.html" data-href="reference.html">Reference</a></li>
-            <li><a href="#contact.html" data-href="contact.html">Contact</a></li>
-            <li><a href="#document.html" data-href="document.html">Document</a></li>
+            <li><a href="about.html"  class="links" >About</a></li>
+            <li>
+              <a href="gallery.html" class="links"  >Gallery</a>
+            </li>
+            <li>
+              <a href="reference.html"  class="links" >Reference</a>
+            </li>
+            <li>
+              <a href="contact.html"  class="links" >Contact</a>
+            </li>
+            <li>
+              <a href="document.html" class="links"  >Document</a>
+            </li>
           </ul>
         </div>
       </div>
-    <h1>Explore my gallery</h1>
-    <div class="display-gallery">
-      <div class="display-grid">
-        <div class="gallery-images">
-          <img src="10images/5F8A0001.JPG" alt="" />
+      <div class="display-gallery">
+          <h1 class="gallery-h1">Explore my gallery</h1>
+        <div class="display-grid">
+          <div class="gallery-images">
+            <img src="10images/5F8A0001.JPG" class="gallery-img" alt="" />
+          </div>
+          <div class="gallery-images">
+            <img src="10images/5F8A9987.JPG" class="gallery-img" alt="" />
+          </div>
+          <div class="gallery-images">
+            <img src="10images/5F8A9988.JPG " class="gallery-img big" alt="" />
+          </div>
+          <div class="gallery-images">
+            <img src="10images/5F8A9989.JPG " class="gallery-img" alt="" />
+          </div>
+          <div class="gallery-images">
+            <img src="10images/IMG_8023.jpg " class="gallery-img wide" alt="" />
+          </div>
+          <div class="gallery-images">
+            <img src="10images/IMG_8025.jpg " class="gallery-img" alt="" />
+          </div>
+          <div class="gallery-images">
+            <img src="10images/IMG_8110.jpg " class="gallery-img" alt="" />
+          </div>
+          <div class="gallery-images">
+            <img
+              src="10images/IMG_8113.jpg "
+              class="gallery-img small"
+              alt=""
+            />
+          </div>
+          <div class="gallery-images">
+            <img src="10images/IMG_8121.jpg " class="gallery-img" alt="" />
+          </div>
+          <div class="gallery-images">
+            <img src="10images/IMG_8124.jpg " class="gallery-img" alt="" />
+          </div>
         </div>
-        <div class="gallery-images">
-            <img src="10images/5F8A9987.JPG" alt="" />
-          </div>
-          <div class="gallery-images">
-            <img src="10images/5F8A9988.JPG" alt="" />
-          </div>
-          <div class="gallery-images">
-            <img src="10images/5F8A9989.JPG" alt="" />
-          </div>
-          <div class="gallery-images">
-            <img src="10images/IMG_8023.jpg" alt="" />
-          </div>
-          <div class="gallery-images">
-            <img src="10images/IMG_8025.jpg" alt="" />
-          </div>
-          <div class="gallery-images">
-            <img src="10images/IMG_8110.jpg" alt="" />
-          </div>
-          <div class="gallery-images">
-            <img src="10images/IMG_8113.jpg" alt="" />
-          </div>
-          <div class="gallery-images">
-            <img src="10images/IMG_8121.jpg" alt="" />
-          </div>
-          <div class="gallery-images">
-            <img src="10images/IMG_8124.jpg" alt="" />
-          </div>
       </div>
     </div>
   </body>
