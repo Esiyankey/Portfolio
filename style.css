@@ -99,7 +99,6 @@ span {
   font-size: 1rem;
   width: 500px;
   color: #e6e6fa;
-  text-overflow: clip;
 }
 .overlay-excerpt h4 {
   margin-bottom: 3rem;
@@ -520,7 +519,9 @@ input:focus {
     display: flex;
     margin-right: 1rem;
   }
-
+.image{
+  width: 3rem;
+}
   .overlay {
 
     margin-left: 1rem;
