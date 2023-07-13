@@ -550,6 +550,7 @@ input:focus {
     max-width: 40rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
   }
   .courses-card {
     width: 19rem;
