@@ -191,7 +191,8 @@ span {
   animation: 20s slider infinite;
 }
 .sliding-images .image-slider .imageslides {
-  width: 20%;
+  width: 50%;
+  height: 35rem;
   float: left;
   object-fit: cover;
   background-repeat: no-repeat;
