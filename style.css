@@ -191,7 +191,7 @@ span {
   animation: 20s slider infinite;
 }
 .sliding-images .image-slider .imageslides {
-  width: 50%;
+  width: 20%;
   height: 35rem;
   float: left;
   object-fit: cover;
@@ -563,6 +563,10 @@ input:focus {
   .sliding-images .image-slider {
     width: 250%;
     overflow-x: hidden;
+  }
+  .sliding-images .image-slider .imageslides {
+
+    width: 50%;
   }
 
 .about-division{
