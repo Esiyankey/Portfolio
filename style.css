@@ -570,9 +570,7 @@ input:focus {
     width: 50%;
     overflow-x: hidden;
   }
-  .sliding-images .image-slider .imageslides {
-    width: 50%;
-  }
+ 
 
 .about-division{
   max-width: 30rem;
