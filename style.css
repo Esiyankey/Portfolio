@@ -13,8 +13,6 @@ body {
 .fabars {
   font-size: 1.5rem;
   display: none;
-  position: relative;
-  right: 8rem;
   cursor: pointer;
 }
 .navbar {
@@ -71,7 +69,7 @@ body {
   color: #4d4b4d;
 }
 .overlay {
-  /* max-width: 50rem; */
+  max-width: 63rem;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -275,7 +273,7 @@ span {
 .courses-card {
   padding-bottom: 1rem;
   width: 25rem;
-  height: 20rem;
+  min-height: 20rem;
   border-radius: 0.6rem;
   background-color: whitesmoke;
   /* transition: transform 0.1s ease-in-out; */
@@ -566,7 +564,7 @@ input:focus {
   }
   .sliding-images{
     overflow:hidden ;
-    width: 28rem;
+    width: 24.5rem;
   }
 
   .sliding-images .image-slider {
@@ -574,12 +572,9 @@ input:focus {
     overflow-x: hidden;
   }
   .sliding-images .image-slider .imageslides {
-
-    width: 50%;
+    width: 40.2%;
   }
-  .sliding-images{
-    width: 30rem;
-  }
+  
 
 .about-division{
   max-width: 30rem;
