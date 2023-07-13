@@ -507,7 +507,7 @@ input:focus {
     overflow-x: hidden;
   }
   .navbar {
-    justify-content: space-between;
+    justify-content: space-around;
     overflow-x: hidden;
   }
   .links-ul {
