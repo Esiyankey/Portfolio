@@ -527,8 +527,8 @@ input:focus {
   .show {
     display: block;
   }
-  .sliding-images .image-slider{
-    overflow-x:hidden ;
+  .sliding-images{
+    overflow:hidden ;
   }
 .sliding-images 
 {
