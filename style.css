@@ -568,11 +568,11 @@ input:focus {
   }
 
   .sliding-images .image-slider {
-    width: 200%;
+    width: 280%;
     overflow-x: hidden;
   }
   .sliding-images .image-slider .imageslides {
-    width: 37.5%;
+    width: 35.715%;
     overflow: hidden;
   }
   
