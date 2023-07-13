@@ -506,7 +506,7 @@ input:focus {
     overflow-x: hidden;
   }
   .navbar {
-    justify-content: space-around;
+    justify-content: space-between;
     overflow-x: hidden;
     position: fixed;
   }
