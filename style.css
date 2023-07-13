@@ -13,6 +13,8 @@ body {
 .fabars {
   font-size: 1.5rem;
   display: none;
+  position: relative;
+  right: 5rem;
   cursor: pointer;
 }
 .navbar {
