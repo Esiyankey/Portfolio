@@ -573,6 +573,7 @@ input:focus {
   }
   .sliding-images .image-slider .imageslides {
     width: 37.5%;
+    overflow: hidden;
   }
   
 
