@@ -6,11 +6,14 @@ const inputReset = document.querySelectorAll(".input");
 const Bars = document.getElementById("bars");
 const showLinks = document.getElementById("showLinks");
 
-function handleSubmit (e) {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
-  alert("Form submitted");
-  console.log("heya there")
-};
+
+ alert("form submitted")
+});
+
+
+
 function handleReset (e) {
   e.preventDefault();
   form.reset();
@@ -20,11 +23,7 @@ function handleShowLinks () {
   showLinks.classList.toggle("show");
 };
 
-// submit.addEventListener('click', handleSubmit);
-// reset.addEventListener('click', handleReset);
-// Bars.addEventListener('click', function(){
-//   console.log("helloworld")
-// });
+
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
