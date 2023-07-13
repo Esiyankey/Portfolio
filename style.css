@@ -547,6 +547,7 @@ input:focus {
     display: none;
   }
   .courses-cardContainer {
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
   }
