@@ -464,6 +464,13 @@ input:focus {
   border-radius: 0.2rem;
   width: 25rem;
 }
+.text{
+  padding: 1rem;
+}
+.date{
+  padding-top: 0.8rem;
+  padding-bottom: 1rem;
+}
 @media screen and (max-width: 640px) {
   body {
     overflow-x: hidden;
@@ -473,6 +480,7 @@ input:focus {
   }
   .navbar {
     justify-content: space-between;
+    overflow-x: hidden;
   }
   .links-ul {
     display: none;
@@ -519,4 +527,41 @@ input:focus {
   .show {
     display: block;
   }
+  .sliding-images .image-slider{
+    overflow-x:hidden ;
+  }
+.sliding-images 
+{
+width: 28rem;
+}
+.about-division{
+  max-width: 30rem;
+  margin-top: 9rem;
+  flex-direction: column;
+}
+.about-images{
+  width: 22rem;
+  padding-top: 2rem;
+  /* margin-top: 9rem; */
+}
+.about-info{
+  width: 22rem;
+ margin:0 1rem 9rem 1rem;
+}
+.referees{
+  flex-direction: column;
+}
+.reference-section{
+  padding: 2rem;
+}
+.reference-img img{
+  width:22rem ;
+}
+input{
+  width: 20rem;
+}
+.form-section{
+  align-items: center;
+  padding-left: 1rem;
+}
 }

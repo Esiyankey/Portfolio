@@ -1,10 +1,10 @@
 const form = document.getElementById("form");
-const submit = document.getElementById("submit-button");
+const submit = document.getElementById("submitButton");
 const links = document.querySelectorAll(".links");
-const reset = document.getElementById("reset-button");
+const reset = document.getElementById("resetButton");
 const inputReset = document.querySelectorAll(".input");
 const Bars = document.getElementById("bars");
-const showLinks = document.getElementById("show-links");
+const showLinks = document.getElementById("showLinks");
 
 const handleSubmit = (e) => {
   e.preventDefault();
@@ -16,13 +16,15 @@ const handleReset = (e) => {
   form.reset();
 };
 
-const handleShowLinks = () => {
+function handleShowLinks () {
   showLinks.classList.toggle("show");
 };
 
-submit.addEventListener("click", handleSubmit);
-reset.addEventListener("click", handleReset);
-Bars.addEventListener("click", handleShowLinks);
+// submit.addEventListener('click', handleSubmit);
+// reset.addEventListener('click', handleReset);
+// Bars.addEventListener('click', function(){
+//   console.log("helloworld")
+// });
 
 links.forEach((link) => {
   link.addEventListener("click", () => {
