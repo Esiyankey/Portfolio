@@ -506,8 +506,9 @@ input:focus {
     overflow-x: hidden;
   }
   .navbar {
-    justify-content: space-between;
+    justify-content: space-aroun;
     overflow-x: hidden;
+    position: fixed;
   }
   .links-ul {
     display: none;
@@ -614,5 +615,6 @@ input{
 .form-btn{
   text-align: center;
 }
+
 
 }
