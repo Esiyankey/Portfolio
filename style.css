@@ -529,8 +529,8 @@ input:focus {
   .overlay-excerpt {
     width: 200px;
     justify-content: start;
-    overflow: hidden;
     align-items: flex-start;
+    overflow: hidden;
   }
   .name h2 {
     font-size: 2.5rem;
@@ -570,7 +570,13 @@ input:focus {
     width: 50%;
     overflow-x: hidden;
   }
- 
+  .sliding-images .image-slider .imageslides {
+
+    width: 50%;
+  }
+  .sliding-images{
+    width: 30rem;
+  }
 
 .about-division{
   max-width: 30rem;
