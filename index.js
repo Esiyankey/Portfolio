@@ -6,12 +6,11 @@ const inputReset = document.querySelectorAll(".input");
 const Bars = document.getElementById("bars");
 const showLinks = document.getElementById("showLinks");
 
-const handleSubmit = (e) => {
+function handleSubmit (e) {
   e.preventDefault();
   alert("Form submitted");
 };
-
-const handleReset = (e) => {
+function handleReset (e) {
   e.preventDefault();
   form.reset();
 };
