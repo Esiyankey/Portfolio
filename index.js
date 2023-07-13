@@ -9,6 +9,7 @@ const showLinks = document.getElementById("showLinks");
 function handleSubmit (e) {
   e.preventDefault();
   alert("Form submitted");
+  console.log("heya there")
 };
 function handleReset (e) {
   e.preventDefault();
