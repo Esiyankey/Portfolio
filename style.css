@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: white;
-  overflow: hidden;
+  overflow-x: hidden;
   /* font-family: 'Poppins', sans-serif; */
 }
 
@@ -197,6 +197,31 @@ span {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+
+
+/* .sliding-images {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+}
+
+.sliding-images .image-slider {
+  display: flex;
+  width: 100%;
+  animation: 20s slider infinite;
+}
+
+.sliding-images .image-slider .imageslides {
+  flex: 0 0 40rem;
+  height: 35rem;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
 
 @keyframes slider {
   0% {
