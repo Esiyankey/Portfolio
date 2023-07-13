@@ -567,7 +567,7 @@ input:focus {
   }
 
   .sliding-images .image-slider {
-    width: 50%;
+    width: 250%;
     overflow-x: hidden;
   }
   .sliding-images .image-slider .imageslides {
