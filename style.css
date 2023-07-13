@@ -266,11 +266,12 @@ span {
   margin-top: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.5rem;
+  gap: 2.2rem;
   justify-content: center;
   align-items: center;
 }
 .courses-card {
+  padding: 1rem;
   width: 25rem;
   height: 20rem;
   border-radius: 0.6rem;
