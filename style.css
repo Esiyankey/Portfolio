@@ -71,13 +71,14 @@ body {
   color: #4d4b4d;
 }
 .overlay {
-  max-width: 50rem;
+  /* max-width: 50rem; */
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 10rem;
   margin-bottom: 3rem;
+ 
   z-index: 10;
 }
 .active {
