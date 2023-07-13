@@ -614,4 +614,7 @@ input{
 .form-btn{
   text-align: center;
 }
+.calender-marquee{
+  overflow-x:hidden ;
+}
 }
