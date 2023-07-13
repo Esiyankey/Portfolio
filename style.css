@@ -271,7 +271,7 @@ span {
   align-items: center;
 }
 .courses-card {
-  padding: 1rem;
+  padding-bottom: 1rem;
   width: 25rem;
   height: 20rem;
   border-radius: 0.6rem;
@@ -522,11 +522,12 @@ input:focus {
   }
 
   .overlay {
-    overflow: hidden;
+
     margin-left: 1rem;
-    margin-top: 4rem;
+    margin-top: 7rem;
   }
   .overlay-excerpt {
+    width: 200px;
     justify-content: start;
     align-items: flex-start;
   }
@@ -537,7 +538,9 @@ input:focus {
     font-size: 1rem;
     width: 20rem;
   }
-
+.personal-image{
+  display: none;
+}
   .icons {
     display: none;
   }
@@ -563,7 +566,7 @@ input:focus {
   }
 
   .sliding-images .image-slider {
-    width: 200%;
+    width: 50%;
     overflow-x: hidden;
   }
   .sliding-images .image-slider .imageslides {
